@@ -54,7 +54,7 @@ Python server (needs [uv](https://docs.astral.sh/uv/) on the runner):
 | input | default | meaning |
 |---|---|---|
 | `command` | (required) | Command line that starts your MCP server over stdio. Split on spaces; quoting is not supported, so put a complex command in a script file. |
-| `version` | `0.4.0` | Exact `protocolprobe-selftest` version from npm, 0.4.0 or later (earlier versions lack `--fail-on-finding` and `--sarif`). Ranges and tags are refused. |
+| `version` | `0.5.0` | Exact `protocolprobe-selftest` version from npm, 0.4.0 or later (earlier versions lack `--fail-on-finding` and `--sarif`). Ranges and tags are refused. |
 | `fail-on-finding` | `true` | Fail the step (exit 5) when a check needs attention (`VULNERABLE` or `FOUND`). |
 | `sarif` | `protocolprobe-selftest.sarif` | SARIF 2.1.0 file to write. Empty to skip. |
 | `sarif-anchor` | | File the SARIF results point at (line 1). Default: the first file of `command` inside the working directory. Set it when that file is build output (for example `dist/`) that is not in the repository. |

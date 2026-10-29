@@ -14,7 +14,7 @@ fail() {
 }
 bool() { case "$1" in true|false) ;; *) fail "$2 must be true or false, got '$1'";; esac; }
 
-: "${PP_COMMAND:=}" "${PP_VERSION:=0.4.0}" "${PP_FAIL_ON_FINDING:=true}" "${PP_SARIF:=}" "${PP_SARIF_ANCHOR:=}"
+: "${PP_COMMAND:=}" "${PP_VERSION:=0.5.0}" "${PP_FAIL_ON_FINDING:=true}" "${PP_SARIF:=}" "${PP_SARIF_ANCHOR:=}"
 : "${PP_OUT:=}" "${PP_ALLOW_MUTATING:=false}" "${PP_ALLOW_FUZZING:=false}"
 
 # exact version only (no ranges, tags or URLs), so a run always uses the version the workflow names

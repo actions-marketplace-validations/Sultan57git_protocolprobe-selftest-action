@@ -12,7 +12,7 @@ inputs:
   version:
     description: "Exact protocolprobe-selftest version to run (npm), 0.4.0 or later. Pinned on purpose."
     required: false
-    default: "0.4.0"
+    default: "0.5.0"
   fail-on-finding:
     description: "Fail the step (exit 5) when a check needs attention (VULNERABLE or FOUND)."
     required: false
